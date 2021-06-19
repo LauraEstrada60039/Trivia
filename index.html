@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" href="css/trivia.css" />
+  </head>
+  <body>
+    <div id="contenedor-formulario" class="contenedor-formulario">
+      <form class="trivia-formulario" action="" id="trivia-formulario" class="centrar-etiquetas">
+        <h1 class="h1-trivia">TRIVIA</h1>
+        <div class="question-field estilo-preguntas">
+          <label for="cantidad-preguntas">Número de preguntas: </label>
+          <input type="number" id="cantidad-preguntas" min="0" class="amount cantidad-preguntas" value="4" />
+        </div>
+
+        <div class="question-field estilo-preguntas">
+          <label for="categoria">Categoría: </label>
+          <select name="" id="categoria">
+            <option value="0" selected>Cualquier categoría</option>
+            <option value="9">Cultura general</option>
+            <option value="10">Libros</option>
+            <option value="11">Películas</option>
+            <option value="12">Música</option>
+            <option value="13">Musicales y teatros</option>
+            <option value="14">Televisión</option>
+            <option value="15">Videojuegos</option>
+            <option value="16">Juegos de mesa</option>
+            <option value="17">Ciencia y naturaleza</option>
+            <option value="18">Computación</option>
+            <option value="19">Matemáticas</option>
+            <option value="20">Mitología</option>
+            <option value="21">Deportes</option>
+            <option value="22">Geografía</option>
+            <option value="23">Historia</option>
+            <option value="24">Política</option>
+            <option value="25">Arte</option>
+            <option value="26">Celebridades</option>
+            <option value="27">Animales</option>
+            <option value="28">Autos</option>
+            <option value="29">Comics</option>
+            <option value="30">Gadgets</option>
+            <option value="31">Ánime y manga</option>
+            <option value="32">Caricaturas</option>
+          </select>
+        </div>
+
+        <div class="question-field estilo-preguntas">
+          <label for="dificultad">Dificultad: </label>
+          <select name="" id="dificultad">
+            <option value="0" selected>Cualquier dificultad</option>
+            <option value="easy">Fácil</option>
+            <option value="medium">Moderada</option>
+            <option value="hard">Difícil</option>
+          </select>
+        </div>
+
+        <div class="question-field preguntas">
+          <label for="tipo">Tipo de pregunta: </label>
+          <select name="" id="tipo">
+            <option value="0" selected>Cualquier tipo</option>
+            <option value="multiple">Opción Múltiple</option>
+            <option value="boolean">Verdadero / Falso</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Comenzar" />
+      </form>
+    </div>
+
+    <div id="contenedor-trivia" class="contenedor-trivia">
+      <div class="contenedor-contenido" id="contenido-preguntas">
+        <p id="pregunta-trivia"></p>
+        <div class="question-items preguntas-items">
+          <button id="1" type="button" class="respuesta">Ans 1</button>
+          <button id="2" type="button" class="respuesta">Ans 2</button>
+          <button id="3" type="button" class="respuesta">Ans 3</button>
+          <button id="4" type="button" class="respuesta">Ans 4</button>
+        </div>
+      </div>     
+    </div>
+
+    <div id="contenedor-fin-juego">
+      <div class="fin-del-juego">
+        <h1 class="tamanio-h1">.:Fin del juego:.</h1>
+        <div class="imagen-celebracion">
+          <img src=".\img\celebracion.gif">
+        </div>
+        <h3 id="score-trivia" class="tamanio-h3"></h3>
+        <a id="regresar" href=""></a>
+      </div>
+    </div>
+
+
+    <script src="js/trivia.js"></script>
+  </body>
+</html>
