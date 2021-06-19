@@ -110,7 +110,7 @@ input, select {
 	justify-content: center;
 }
 
-img {
+.imagen-celebracion img {
 	width: 100%;
 }
 
@@ -211,6 +211,18 @@ a {
   	.contenedor-contenido {
 	  width: 70%;
 	  border-radius: 30px;
+	}
+	.contenedor-contenido {
+	  width: 90%;
+	  margin: 10px;
+	  border-radius: 30px;
+	}
+	.contenedor-trivia {
+	  padding: 5px;
+	}
+	.respuesta {
+	  width: 80%;
+	  border-radius: 40px;
 	}
 }
 
