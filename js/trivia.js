@@ -174,7 +174,7 @@ const startGame = () => {
 };
 
 let correctAnswer = id => {
-  console.log("correct respuesta"+id);
+  // console.log("correct respuesta"+id);
   if (correct_index_answer == id) {
     // console.log("Es correcto");
     score = porcentaje + score;
@@ -192,7 +192,7 @@ let correctAnswer = id => {
     contenedorFinDelJuego.style.display = "flex";
     //Ocultamos el de la trivia
     contenedorPregunta.style.display = "none";
-    let frase = "Su score es del " + String(score) + "%";
+    let frase = "Su score es del " + String( Math.round(score)) + "%";
     // console.log(score);
     //Para el score
     document.getElementById("score-trivia").innerText = frase;
