@@ -110,6 +110,10 @@ input, select {
 	justify-content: center;
 }
 
+img {
+	width: 100%;
+}
+
 .tamanio-h1 {
 	font-size: 3rem;
 	color: #fff000;
@@ -201,9 +205,13 @@ a {
 
 
 @media only screen and ( max-width: 712px ) {
-  .trivia-formulario {
-    width: 90%;
-  }
+  	.trivia-formulario {
+      width: 90%;
+  	}
+  	.contenedor-contenido {
+	  width: 70%;
+	  border-radius: 30px;
+	}
 }
 
 
