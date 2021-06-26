@@ -110,12 +110,49 @@ let getAPIData = e => {
     // console.log(url);
   }
   fetch(url)
+  // .then(response=>{
+  //   if ( response.ok == true ) {
+  //     console.log(response);
+  //     console.log("Sí pasó");
+  //         fetch(url).then(response => {
+  //           console.log(url);
+  //           // // console.log("razones: "+event.reason());
+  //           // console.log(response.redirected==false);
+  //           // console.log(response);
+  //           // console.log(response.json());
+  //           return response.json();
+  //         })
+  //     //     .then(() => {
+  //     //     throw new Error('Algo falló');
+
+  //     //     console.log('Haz esto para fallos');
+  //     // })
+  //     // .catch(() => {
+  //     //     console.log('Haz aquello de que paso');
+  //     // })
+  //         .then(data => {
+  //           // console.log("razones: "+event.reason());
+  //           questions = data.results;
+  //           startGame();
+  //         });
+  //   } else {
+  //     console.log("No pasó");
+  //   }
+  // })
     .then(response => {
+      console.log(url);
       return response.json();
     })
     .then(data => {
       questions = data.results;
-      startGame();
+      console.log(data.response_code === 0 );
+      console.log(data.results);
+      if (data.response_code === 0) {
+        startGame();
+      } else {
+        alert("La API no encontró los resultados"
+        +"\nPor favor, vuelve a intentarlo");
+      }
     });
 };
 

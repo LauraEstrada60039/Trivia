@@ -57,6 +57,8 @@ input, select {
 	padding: 50px;
 	display: flex;
 	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 
 .contenedor-contenido {
@@ -77,6 +79,7 @@ input, select {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 
 .respuesta {
@@ -226,7 +229,27 @@ a {
 	}
 }
 
-
+@media only screen and ( min-width: 712px ) and (max-width: 1024px ) {
+  	.trivia-formulario {
+      width: 70%;
+  	}
+  	.contenedor-contenido {
+	  width: 70%;
+	  border-radius: 30px;
+	}
+	.contenedor-contenido {
+	  width: 90%;
+	  margin: 10px;
+	  border-radius: 30px;
+	}
+	.contenedor-trivia {
+	  padding: 5px;
+	}
+	.respuesta {
+	  width: 80%;
+	  border-radius: 40px;
+	}
+}
 
 
 
